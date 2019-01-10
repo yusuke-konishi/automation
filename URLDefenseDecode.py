@@ -1,4 +1,6 @@
 #!python
+# How do I decode a rewritten URL? - Proofpoint, Inc.
+# https://help.proofpoint.com/Threat_Insight_Dashboard/Concepts/How_do_I_decode_a_rewritten_URL%3F
 
 import sys
 import re
