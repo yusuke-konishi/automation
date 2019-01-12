@@ -26,7 +26,7 @@ def decodev1 (rewrittenurl):
 	if match:
 		urlencodedurl = match.group(1)
 		htmlencodedurl = urllib.parse.unquote(urlencodedurl)
-		url = html.parser.HTMLParser().unescape(htmlencodedurl)
+		url = html.unescape(htmlencodedurl)
 		print(url)
 	else:
 		print('Error parsing URL')
@@ -38,7 +38,7 @@ def decodev2 (rewrittenurl):
 		trans = str.maketrans('-_', '%/')
 		urlencodedurl = specialencodedurl.translate(trans)
 		htmlencodedurl = urllib.parse.unquote(urlencodedurl)
-		url = html.parser.HTMLParser().unescape(htmlencodedurl)
+		url = html.unescape(htmlencodedurl)
 		print(url)
 	else:
 		print('Error parsing URL')
