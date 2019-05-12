@@ -1,1 +1,3 @@
-# debug_script
+# Automation scripts
+## Mac Terminal
+## Visual Studio Code
