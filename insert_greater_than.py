@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 #
 # prep:
-#   1. chmod +x insert_greater_than.py
-#   2. echo "alias igt='insert_greater_than.py && sleep 1 && exit'" >> ~/.bash_profile
+#   1. echo 'export PATH="$PATH:/path/to/dir"' >> ~/.bash_profile
+#   2. echo 'alias igt="insert_greater_than.py && sleep 1 && exit"' >> ~/.bash_profile
 #   3. source ~/.bash_profile
+#   4. chmod +x /path/to/dir/insert_greater_than.py
 #
 # usage:
 #   1. copy the source text to clipboard
