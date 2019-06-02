@@ -2,13 +2,13 @@
 # How do I decode a rewritten URL? - Proofpoint, Inc.
 # https://help.proofpoint.com/Threat_Insight_Dashboard/Concepts/How_do_I_decode_a_rewritten_URL%3F
 
-import sys
+import pyperclip
 import re
 import urllib.parse
 import html.parser
 
 def main():
-	rewrittenurl = sys.argv[1]
+	rewrittenurl = pyperclip.paste()
 	match = re.search(r'https://urldefense.proofpoint.com/(v[0-9])/', rewrittenurl)
 	if match:
 		if match.group(1) == 'v1':
