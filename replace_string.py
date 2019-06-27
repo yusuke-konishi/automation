@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# a tentative script to replace string by pattern like "_check .*(\[ (PASS|INFO|WARN|FAIL|ERR) \])"
+# a tentative script to replace string by pattern like "(Running /health_checks/.*?) .*(\[ (PASS|INFO|WARN|FAIL|ERR) \])"
+# ex: replace_string.py ncc.log "(Running /health_checks/.*?) .*(\[ (PASS|INFO|WARN|FAIL|ERR) \])"
 
 import sys, re
 
@@ -18,5 +19,5 @@ for line in src_list:
     if not mo:
         continue
 
-    line = re.sub(pattern, '_check ' + mo.group(1), line)
+    line = re.sub(pattern, mo.group(1) + ' ' + mo.group(2), line)
     print(line, end='')
