@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# a tentative script to replace string by pattern like "(Running /health_checks/.*?) .*(\[ (PASS|INFO|WARN|FAIL|ERR) \])"
-# ex: replace_string.py ncc.log "(Running /health_checks/.*?) .*(\[ (PASS|INFO|WARN|FAIL|ERR) \])"
+# a tentative script to replace string by pattern like "(Running /health_checks/.*?) .*(\[ .* \])"
+# ex: replace_string.py ncc.log "(Running /health_checks/.*?) .*(\[ .* \])"
 
 import sys, re
 
