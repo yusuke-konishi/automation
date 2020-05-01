@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 #
-# prep:
-#   1. echo 'export PATH="$PATH:/path/to/dir"' >> ~/.bash_profile
-#   2. echo 'alias igt="insert_greater_than.py && sleep 1 && exit"' >> ~/.bash_profile
-#   3. source ~/.bash_profile
+# prep for Ubuntu on WSL:
+#   1. echo 'export PATH="$PATH:/path/to/dir"' >> ~/.bashrc
+#   2. echo 'alias igt="insert_greater_than.py && sleep 1 && exit"' >> ~/.bashrc
+#   3. source ~/.bashrc
 #   4. chmod +x /path/to/dir/insert_greater_than.py
+#   5. pip3 install pyperclip
 #
 # usage:
 #   1. copy the source text to clipboard
